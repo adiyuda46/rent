@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rent/ui/widget/card.dart';
 import 'package:rent/ui/widget/notifButton.dart';
 import '../widget/Search.dart';
 
@@ -10,11 +11,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  void _performSearch() {
-    // Logika pencarian atau aksi yang diinginkan
-    print('Melakukan pencarian...');
-  }
-
   @override
   Widget build(BuildContext context) {
     final double tinggi = MediaQuery.of(context).size.height;
@@ -26,18 +22,29 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: const EdgeInsets.fromLTRB(22, 30, 22, 30),
               child: Row(
-                
                 children: [
                   FindProduct(),
-                 // SizedBox(width: 10,),
+                  // SizedBox(width: 10,),
                   Container(
-                    height: 60,
-                    width: 60,
-                    margin: EdgeInsets.only(left: 22),
-                    child: NotifButton()),
+                      height: 60,
+                      width: 60,
+                      margin: EdgeInsets.only(left: 22),
+                      child: NotifButton()),
                 ],
               ),
-            )
+            ),
+            Container(
+                height: tinggi * 0.2,
+                width: lebar,
+                color: Colors.amber,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    BannerPage(),
+                    BannerPage(),
+                    BannerPage(),
+                  ],
+                ))
           ],
         ),
       ),
