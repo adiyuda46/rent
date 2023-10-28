@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rent/ui/widget/card.dart';
+import 'package:rent/ui/widget/navigator.dart';
 import 'package:rent/ui/widget/notifButton.dart';
 import '../widget/Search.dart';
 
@@ -36,7 +37,7 @@ class _HomePageState extends State<HomePage> {
             Container(
                 height: tinggi * 0.2,
                 width: lebar,
-                color: Colors.amber,
+               // color: Colors.amber,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
@@ -44,7 +45,28 @@ class _HomePageState extends State<HomePage> {
                     BannerPage(),
                     BannerPage(),
                   ],
-                ))
+                ),),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(22, 24, 22, 24),
+                  child: Container(
+                    height: tinggi *0.05,
+                    width: lebar,
+                    
+                    decoration: BoxDecoration(
+                      color: Colors.black12,
+                      borderRadius: BorderRadius.circular(10)
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        NavBar(buttonText: "all",),
+                        NavBar(buttonText: "sepatu",),
+                        NavBar(buttonText: "tenda",),
+                           NavBar(buttonText: "tenda",)
+                      ],
+                    ),
+                  ),
+                )
           ],
         ),
       ),
