@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rent/ui/widget/card.dart';
+import 'package:rent/ui/widget/item.dart';
 import 'package:rent/ui/widget/navigator.dart';
 import 'package:rent/ui/widget/notifButton.dart';
 import '../widget/Search.dart';
@@ -47,7 +48,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(22, 24, 22, 24),
+                  padding: const EdgeInsets.fromLTRB(22, 24, 22, 20),
                   child: Container(
                     height: tinggi *0.05,
                     width: lebar,
@@ -66,7 +67,20 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                   ),
-                )
+                ),
+                Container(
+                  height: tinggi * 0.45,
+                  width: lebar,
+                  color: Colors.amber,
+                  child: Item(),
+                
+                ),
+                // Container(
+                //   width: lebar,
+                //   height: tinggi *0.10,
+                //   color: Colors.grey,
+                // )
+
           ],
         ),
       ),
