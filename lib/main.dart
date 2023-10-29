@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rent/ui/page/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,10 +10,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text("ok punya"),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+     home: HomePage(),
+     routes: {
+      '/homePage' :(context) => HomePage(),
+     },
     );
   }
 }
