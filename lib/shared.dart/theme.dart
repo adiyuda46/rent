@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-Color kBlackColor= Color(0x1E232C);
-Color kWhiteColor = Color(0xFFFFFF);
-Color kCyanColor = Color(0x35C2C1);
+double defaultMargin = 24.0;
+double defaultRadius = 17.0;
+
+Color kBlackColor= Color(0xff1E232C);
+Color kWhiteColor = Color(0xffFFFFFF);
+Color kCyanColor = Color(0xff35C2C1);
 
 TextStyle blackTextStyle = GoogleFonts.urbanist(
   color: kBlackColor,

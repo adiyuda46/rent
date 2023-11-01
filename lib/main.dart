@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rent/ui/page/home.dart';
+import 'package:rent/ui/page/splash.dart';
+import 'package:rent/ui/page/welcome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-     home: HomePage(),
+     home: WelcomePage(),
      routes: {
       '/homePage' :(context) => HomePage(),
      },
