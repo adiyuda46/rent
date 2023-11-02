@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:rent/ui/page/home.dart';
+import 'package:rent/ui/page/splash.dart';
+import 'package:rent/ui/page/welcome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,11 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text("ok sip"),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+     home: WelcomePage(),
+     routes: {
+      '/homePage' :(context) => HomePage(),
+     },
     );
   }
 }
