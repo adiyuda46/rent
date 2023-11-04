@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rent/ui/widget/inputText.dart';
 
 import '../../shared.dart/theme.dart';
 
@@ -13,6 +14,7 @@ class LoginPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.fromLTRB(22, 70, 22, 22),
         child: SingleChildScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.manual,
           child: Column(
             children: [
               Text(
@@ -22,25 +24,11 @@ class LoginPage extends StatelessWidget {
               SizedBox(
                 height: 50,
               ),
-              TextField(
-                decoration: InputDecoration(
-                  hintText: "Enter Your Email",
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
-              ),
+              InputText(hintText: "Enter Your Email"),
               SizedBox(
                 height: 20,
               ),
-              TextField(
-                decoration: InputDecoration(
-                  hintText: "Enter Your Password",
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
-              ),
+              InputText(hintText: "Enter Your Password"),
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
@@ -67,18 +55,24 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Text("Don't have an account yet?")),
-              InkWell(
+              SizedBox(height: tinggi * 0.3,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Don't have an account yet? "),
+                  InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/register');
+                  Navigator.pushNamed(context, 'RegisterPage');
                 },
                 child: Text(
                   "Register Now!",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.blue),
                 ),
               ),
+                ],
+              ),
+              
+          
             ],
           ),
         ),
