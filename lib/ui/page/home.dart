@@ -75,12 +75,6 @@ class _HomePageState extends State<HomePage> {
                   child: Item(),
                 
                 ),
-                // Container(
-                //   width: lebar,
-                //   height: tinggi *0.10,
-                //   color: Colors.grey,
-                // )
-
           ],
         ),
       ),

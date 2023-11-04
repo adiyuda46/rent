@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Item extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final List<String> items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
+    final List<String> items = ['assets/tenda.png', 'assets/tenda.png', 'assets/tenda.png', 'assets/tenda.png', 'assets/tenda.png'];
 
     return Container(
       child: Expanded(
