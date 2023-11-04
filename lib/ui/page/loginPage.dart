@@ -32,7 +32,9 @@ class LoginPage extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.popAndPushNamed(context, '/ForgetPassword');
+                  },
                   child: Text("Forget Password?"),
                 ),
               ),
