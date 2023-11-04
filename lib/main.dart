@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:rent/ui/page/forgotpassword.dart';
 import 'package:rent/ui/page/home.dart';
+import 'package:rent/ui/page/loginPage.dart';
 import 'package:rent/ui/page/splash.dart';
 import 'package:rent/ui/page/welcome.dart';
 
@@ -18,7 +20,10 @@ class MyApp extends StatelessWidget {
       routes: {
        // '/': (context) => SplashPage(),
         '/WelcomePage': (contex) => WelcomePage(),
+        '/LoginPage' : (context) => LoginPage(),
         '/homePage': (context) => HomePage(),
+        '/ForgetPassword' : (context) => ForgetPassword(),
+        
         
       },
     );
