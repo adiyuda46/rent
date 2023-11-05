@@ -22,7 +22,7 @@ class AppBar2 extends StatelessWidget implements PreferredSizeWidget{
       backgroundColor: Colors.amber,
       //elevation: 0,
       leading: ButtonBack( imagePath: 'assets/Back button.png', onPressed: (){}),
-      title: Text(title,style: TextStyle(color: Colors.black),),
+      title: Center(child: Text(title,style: TextStyle(color: Colors.black),)),
       actions: [
         NotifButton(icon: Icons.shopping_cart, onPressed: (){})
       ],
