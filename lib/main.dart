@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rent/ui/page/detailProduct.dart';
 import 'package:rent/ui/page/forgotpassword.dart';
 import 'package:rent/ui/page/home.dart';
 import 'package:rent/ui/page/loginPage.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         'RegisterPage' : (context) => RegisterPage(),
         '/homePage': (context) => HomePage(),
         '/ForgetPassword' : (context) => ForgetPassword(),
+        '/DetailProduct':(context) => DetailProduct(),
         
         
       },

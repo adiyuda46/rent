@@ -16,39 +16,35 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView( 
-      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.manual,
-      // Tambahkan SingleChildScrollView di sini
-      child: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        title: Padding(
-          padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Expanded(
-                child: SizedBox(
-                  height: 50,
-                  width: 250,
-                  child: TextField(
-                    controller: textEditingController,
-                    style: TextStyle(fontSize: 15), // Memperbesar ukuran teks input
-                    decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.search),
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
-                      filled: true,
-                      fillColor: Colors.black12,
-                      hintStyle: TextStyle(fontSize: 15), // Memperbesar ukuran teks hint
-                      hintText: "Find your product",
-                    ),
+    return AppBar(
+      backgroundColor: Colors.transparent,
+      elevation: 0,
+      title: Padding(
+        padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Expanded(
+              child: SizedBox(
+                height: 50,
+                width: 250,
+                child: TextField(
+                  controller: textEditingController,
+                  style: TextStyle(fontSize: 15), // Memperbesar ukuran teks input
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.search),
+                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+                    filled: true,
+                    fillColor: Colors.black12,
+                    hintStyle: TextStyle(fontSize: 15), // Memperbesar ukuran teks hint
+                    hintText: "Find your product",
                   ),
                 ),
               ),
-              SizedBox(width: 20,),
-              NotifButton(icon: Icons.notifications_none_rounded, onPressed: (){})
-            ],
-          ),
+            ),
+            SizedBox(width: 20,),
+            NotifButton(icon: Icons.notifications_none_rounded, onPressed: (){})
+          ],
         ),
       ),
     );
