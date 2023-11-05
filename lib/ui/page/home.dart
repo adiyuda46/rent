@@ -36,45 +36,71 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Container(
-                height: tinggi * 0.2,
+              height: tinggi * 0.2,
+              width: lebar,
+              // color: Colors.amber,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  BannerPage(),
+                  BannerPage(),
+                  BannerPage(),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(22, 24, 22, 20),
+              child: Container(
+                height: tinggi * 0.05,
                 width: lebar,
-               // color: Colors.amber,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
+                decoration: BoxDecoration(
+                    color: Colors.black12,
+                    borderRadius: BorderRadius.circular(10)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    BannerPage(),
-                    BannerPage(),
-                    BannerPage(),
+                    NavBar(
+                      buttonText: "all",
+                    ),
+                    NavBar(
+                      buttonText: "sepatu",
+                    ),
+                    NavBar(
+                      buttonText: "tenda",
+                    ),
+                    NavBar(
+                      buttonText: "tenda",
+                    )
                   ],
-                ),),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(22, 24, 22, 20),
-                  child: Container(
-                    height: tinggi *0.05,
-                    width: lebar,
-                    
-                    decoration: BoxDecoration(
-                      color: Colors.black12,
-                      borderRadius: BorderRadius.circular(10)
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        NavBar(buttonText: "all",),
-                        NavBar(buttonText: "sepatu",),
-                        NavBar(buttonText: "tenda",),
-                           NavBar(buttonText: "tenda",)
-                      ],
-                    ),
+                ),
+              ),
+            ),
+            Container(
+              height: tinggi * 0.45,
+              width: lebar,
+              color: Colors.amber,
+              child: Item(),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.home_outlined,
+                    size: 40,
                   ),
                 ),
-                Container(
-                  height: tinggi * 0.45,
-                  width: lebar,
-                  color: Colors.amber,
-                  child: Item(),
-                
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.shopping_cart_outlined, size: 40),
                 ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.person_outline_outlined, size: 40),
+                ),
+              ],
+            )
           ],
         ),
       ),
