@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
     final double tinggi = MediaQuery.of(context).size.height;
     final double lebar = MediaQuery.of(context).size.width;
     return Scaffold(
-      //resizeToAvoidBottomInset: false,
+      resizeToAvoidBottomInset: false,
       appBar: CustomAppBar(textEditingController: _textEditingController),
       body: Center(
         child: Padding(

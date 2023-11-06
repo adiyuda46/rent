@@ -24,21 +24,19 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Expanded(
-              child: SizedBox(
-                height: 50,
-                width: 250,
-                child: TextField(
-                  controller: textEditingController,
-                  style: TextStyle(fontSize: 15), // Memperbesar ukuran teks input
-                  decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.search),
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
-                    filled: true,
-                    fillColor: Colors.black12,
-                    hintStyle: TextStyle(fontSize: 15), // Memperbesar ukuran teks hint
-                    hintText: "Find your product",
-                  ),
+            SizedBox(
+              height: 50,
+              width: 250,
+              child: TextField(
+                controller: textEditingController,
+                style: TextStyle(fontSize: 15), // Memperbesar ukuran teks input
+                decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.search),
+                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+                  filled: true,
+                  fillColor: Colors.black12,
+                  hintStyle: TextStyle(fontSize: 15), // Memperbesar ukuran teks hint
+                  hintText: "Find your product",
                 ),
               ),
             ),
