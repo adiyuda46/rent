@@ -37,7 +37,7 @@ class ForgetPass extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: ElevatedButton(
                 onPressed: () {
-                  // ke create new pastex
+                  Navigator.pushNamed(context,'/CreateNewPass');// ke create new pastex
                 },
                 child: Text(
                   "verify",
