@@ -27,25 +27,6 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.only(top: 22),
           child: Column(
             children: [
-              // Padding(
-              //   padding: const EdgeInsets.fromLTRB(22, 30, 22, 30),
-              //   child: Row(
-              //     children: [
-              //       FindProduct(),
-              //       // SizedBox(width: 10,),
-              //       Container(
-              //         height: 60,
-              //         width: 60,
-              //         margin: EdgeInsets.only(left: 22),
-              //         child: NotifButton(
-              //           icon: Icons.notifications_none_outlined,
-              //           iconSize: 35,
-              //           onPressed: () {},
-              //         ),
-              //       ),
-              //     ],
-              //   ),
-              // ),
               Container(
                 height: tinggi * 0.2,
                 width: lebar,
@@ -103,7 +84,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/Cart');
+                    },
                     icon: Icon(Icons.shopping_cart_outlined, size: 40),
                   ),
                   IconButton(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rent/ui/page/cart.dart';
 import 'package:rent/ui/page/detailProduct.dart';
 import 'package:rent/ui/page/forgotpassword.dart';
 import 'package:rent/ui/page/home.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         '/homePage': (context) => HomePage(),
         '/ForgetPassword' : (context) => ForgetPassword(),
         '/DetailProduct':(context) => DetailProduct(),
-        
+        '/Cart' : (context) => Cart(),
         
       },
     );
