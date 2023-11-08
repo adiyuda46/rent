@@ -4,6 +4,7 @@ import 'package:rent/ui/page/createNewPass.dart';
 import 'package:rent/ui/page/detailProduct.dart';
 import 'package:rent/ui/page/home.dart';
 import 'package:rent/ui/page/loginPage.dart';
+import 'package:rent/ui/page/passwordChange.dart';
 import 'package:rent/ui/page/registerPage.dart';
 import 'package:rent/ui/page/splash.dart';
 import 'package:rent/ui/page/welcome.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         '/DetailProduct':(context) => DetailProduct(),
         '/ForgetPass':(context) => ForgetPass(),
         '/CreateNewPass':(context) => CreateNewPass(),
-            
+        '/PasswordChange':(context) => PasswordChange(), 
       },
     );
   }
