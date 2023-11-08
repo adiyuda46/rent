@@ -25,7 +25,7 @@ class CreateNewPass extends StatelessWidget {
         Enter(enter: 10),
         InputText(hintText: 'Confirm Password'),
         Enter(enter: 30,),
-        PrimaryButton(button: 'Reset Password')
+        PrimaryButton(button: 'Reset Password', route: '/PasswordChange')
         ],
       ),
     )
