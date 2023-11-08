@@ -3,7 +3,9 @@ import 'package:rent/shared.dart/theme.dart';
 
 class PrimaryButton extends StatelessWidget {
   final String button;
-  const PrimaryButton({super.key, required this.button});
+  final String route;
+  
+  const PrimaryButton({Key? key, required this.button, required this.route});
 
   @override
   Widget build(BuildContext context) {
@@ -13,8 +15,12 @@ class PrimaryButton extends StatelessWidget {
         fixedSize: Size(316, 56),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8), 
-          ),
-        ),  onPressed: (){}, child: Text(button, style:whiteTextStyle));
-          
+        ),
+      ),
+      onPressed: () {
+        Navigator.pushNamed(context, route, arguments: button);
+      },
+      child: Text(button, style: whiteTextStyle),
+    );
   }
 }
