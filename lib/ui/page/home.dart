@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rent/ui/widget/appBar.dart';
+import 'package:rent/ui/widget/buttomNavBar.dart';
 import 'package:rent/ui/widget/card.dart';
 import 'package:rent/ui/widget/item.dart';
 import 'package:rent/ui/widget/navigator.dart';
@@ -73,28 +74,29 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.amber,
                 child: Item(),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.home_outlined,
-                      size: 40,
-                    ),
-                  ),
-                  IconButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/Cart');
-                    },
-                    icon: Icon(Icons.shopping_cart_outlined, size: 40),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.person_outline_outlined, size: 40),
-                  ),
-                ],
-              )
+          
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+              //   children: [
+              //     IconButton(
+              //       onPressed: () {},
+              //       icon: Icon(
+              //         Icons.home_outlined,
+              //         size: 40,
+              //       ),
+              //     ),
+              //     IconButton(
+              //       onPressed: () {
+              //         Navigator.pushNamed(context, '/Cart');
+              //       },
+              //       icon: Icon(Icons.shopping_cart_outlined, size: 40),
+              //     ),
+              //     IconButton(
+              //       onPressed: () {},
+              //       icon: Icon(Icons.person_outline_outlined, size: 40),
+              //     ),
+              //   ],
+              // )
             ],
           ),
         ),

@@ -64,7 +64,7 @@ class _DetailProductState extends State<DetailProduct> {
               ),
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+             mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                ButtonDay(hari: "1 Hari"),
               ButtonDay(hari: "3 Hari"),
@@ -83,7 +83,9 @@ class _DetailProductState extends State<DetailProduct> {
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.black,
                         minimumSize: Size(150, 50)),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/Cart');
+                    },
                     child: Text("+Add to Chart"))
               ],
             )

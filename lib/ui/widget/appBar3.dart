@@ -23,7 +23,7 @@ class AppBar3 extends StatelessWidget implements PreferredSizeWidget {
       leading: IconButton(
         icon: Image.asset('assets/Back button.png'),
         onPressed: () {
-          Navigator.pop(context);
+          Navigator.pushReplacementNamed(context, '/MyBottomNavigationBar');
         },
       ),
       title: Center(

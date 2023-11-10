@@ -7,6 +7,7 @@ import 'package:rent/ui/page/loginPage.dart';
 import 'package:rent/ui/page/registerPage.dart';
 import 'package:rent/ui/page/splash.dart';
 import 'package:rent/ui/page/welcome.dart';
+import 'package:rent/ui/widget/buttomNavBar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/ForgetPassword' : (context) => ForgetPassword(),
         '/DetailProduct':(context) => DetailProduct(),
         '/Cart' : (context) => Cart(),
+        '/MyBottomNavigationBar' :(context) => MyBottomNavigationBar()
         
       },
     );
