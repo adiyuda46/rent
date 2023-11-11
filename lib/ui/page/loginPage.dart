@@ -43,7 +43,7 @@ class LoginPage extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.pushReplacementNamed(context, '/homePage');
+                  Navigator.pushReplacementNamed(context, '/MyBottomNavigationBar');
                 },
                 child: Text(
                   "LOGIN",
