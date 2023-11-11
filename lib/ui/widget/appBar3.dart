@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:rent/ui/widget/backButton.dart';
 import 'package:rent/ui/widget/notifButton.dart';
 
-class AppBar2 extends StatelessWidget implements PreferredSizeWidget {
+class AppBar3 extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final double height;
 
-  const AppBar2({
+  const AppBar3({
     Key? key,
     this.height = kToolbarHeight,
     required this.title,
@@ -23,18 +23,18 @@ class AppBar2 extends StatelessWidget implements PreferredSizeWidget {
       leading: IconButton(
         icon: Image.asset('assets/Back button.png'),
         onPressed: () {
-          Navigator.pop(context);
+          Navigator.pushReplacementNamed(context, '/MyBottomNavigationBar');
         },
       ),
       title: Center(
-        child: Text(
-          title,
-          style: TextStyle(color: Colors.black),
+        child: Padding(
+          padding: const EdgeInsets.only(right: 60),
+          child: Text(
+            title,
+            style: TextStyle(color: Colors.black),
+          ),
         ),
       ),
-      actions: [
-        NotifButton(icon: Icons.shopping_cart, onPressed: () {}),
-      ],
     );
   }
 }
