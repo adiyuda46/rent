@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:rent/ui/page/ForgetPassword.dart';
+import 'package:rent/ui/page/createNewPass.dart';
 import 'package:rent/ui/page/cart.dart';
 import 'package:rent/ui/page/detailProduct.dart';
-import 'package:rent/ui/page/forgotpassword.dart';
 import 'package:rent/ui/page/home.dart';
 import 'package:rent/ui/page/loginPage.dart';
+import 'package:rent/ui/page/passwordChange.dart';
+import 'package:rent/ui/page/profile.dart';
 import 'package:rent/ui/page/registerPage.dart';
 import 'package:rent/ui/page/splash.dart';
 import 'package:rent/ui/page/welcome.dart';
@@ -20,18 +23,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WelcomePage(),
+      home: profilePage(),
       routes: {
        // '/': (context) => SplashPage(),
         '/WelcomePage': (contex) => WelcomePage(),
         '/LoginPage' : (context) => LoginPage(),
-        'RegisterPage' : (context) => RegisterPage(),
+        '/RegisterPage' : (context) => RegisterPage(),
         '/homePage': (context) => HomePage(),
-        '/ForgetPassword' : (context) => ForgetPassword(),
         '/DetailProduct':(context) => DetailProduct(),
-        '/Cart' : (context) => Cart(),
-        '/MyBottomNavigationBar' :(context) => MyBottomNavigationBar()
-        
+        '/ForgetPass':(context) => ForgetPass(),
+        '/CreateNewPass':(context) => CreateNewPass(),
+        '/PasswordChange':(context) => PasswordChange(),
+        '/profilePage':(context) => profilePage(),
       },
     );
   }
