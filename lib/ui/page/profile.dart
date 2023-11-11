@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:rent/shared.dart/theme.dart';
 import 'package:rent/ui/widget/enter.dart';
 
-class profilePage extends StatelessWidget {
-  const profilePage({super.key});
+class ProfilePageV2 extends StatelessWidget {
+  const ProfilePageV2({super.key});
 
   @override
   Widget build(BuildContext context) {
