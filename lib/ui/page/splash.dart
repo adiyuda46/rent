@@ -22,7 +22,7 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     //TODO: implement initState
     Timer(Duration(seconds: 3), (){ 
-      Navigator.pushNamed(context, '/get-started');
+      Navigator.pushReplacementNamed(context, '/WelcomePage');
     });
     super.initState();
   }

@@ -23,9 +23,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: profilePage(),
+      //home: profilePage(),
       routes: {
-       // '/': (context) => SplashPage(),
+        '/': (context) => SplashPage(),
         '/WelcomePage': (contex) => WelcomePage(),
         '/LoginPage' : (context) => LoginPage(),
         '/RegisterPage' : (context) => RegisterPage(),
@@ -35,6 +35,7 @@ class MyApp extends StatelessWidget {
         '/CreateNewPass':(context) => CreateNewPass(),
         '/PasswordChange':(context) => PasswordChange(),
         '/profilePage':(context) => profilePage(),
+        '/MyBottomNavigationBar' : (context) => MyBottomNavigationBar()
       },
     );
   }
