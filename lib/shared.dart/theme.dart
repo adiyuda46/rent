@@ -18,6 +18,20 @@ TextStyle cyanTextStyle = GoogleFonts.urbanist(
   color: kCyanColor,
 );
 
+TextStyle primaryText = GoogleFonts.urbanist(
+  color: kBlackColor, fontSize: 30, fontWeight: bold
+);
+TextStyle textFont16 = GoogleFonts.urbanist(
+  color: kBlackColor, fontSize: 16, fontWeight: bold
+);
+TextStyle textFont20 = GoogleFonts.urbanist(
+  color: kBlackColor, fontSize: 20, fontWeight: bold
+);
+TextStyle textFont14 = GoogleFonts.urbanist(
+  color: kBlackColor, fontSize: 14, fontWeight: light
+);
+
+
 FontWeight light = FontWeight.w300;
 FontWeight regular = FontWeight.w400;
 FontWeight medium = FontWeight.w500;

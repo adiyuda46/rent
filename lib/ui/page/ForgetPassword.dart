@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:rent/shared.dart/theme.dart';
 
-class ForgetPassword extends StatelessWidget {
-  const ForgetPassword({super.key});
+class ForgetPass extends StatelessWidget {
+  const ForgetPass({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        //elevation: 0,
-        title: Text("lklklkl",style: TextStyle(color: kBlackColor),),
-      ),
-      body: Padding(
+      appBar: AppBar(title: Text("testing")
+      ,),
+    body: Padding(
         padding: const EdgeInsets.all(22.0),
         child: Column(
           children: [
@@ -40,7 +37,7 @@ class ForgetPassword extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: ElevatedButton(
                 onPressed: () {
-                  // ke create new pastex
+                  Navigator.pushNamed(context,'/CreateNewPass');// ke create new pastex
                 },
                 child: Text(
                   "verify",
