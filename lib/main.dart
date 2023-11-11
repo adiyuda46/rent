@@ -5,6 +5,7 @@ import 'package:rent/ui/page/detailProduct.dart';
 import 'package:rent/ui/page/home.dart';
 import 'package:rent/ui/page/loginPage.dart';
 import 'package:rent/ui/page/passwordChange.dart';
+import 'package:rent/ui/page/profile.dart';
 import 'package:rent/ui/page/registerPage.dart';
 import 'package:rent/ui/page/splash.dart';
 import 'package:rent/ui/page/welcome.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WelcomePage(),
+      home: profilePage(),
       routes: {
        // '/': (context) => SplashPage(),
         '/WelcomePage': (contex) => WelcomePage(),
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
         '/DetailProduct':(context) => DetailProduct(),
         '/ForgetPass':(context) => ForgetPass(),
         '/CreateNewPass':(context) => CreateNewPass(),
-        '/PasswordChange':(context) => PasswordChange(), 
+        '/PasswordChange':(context) => PasswordChange(),
+        '/profilePage':(context) => profilePage(),
       },
     );
   }
