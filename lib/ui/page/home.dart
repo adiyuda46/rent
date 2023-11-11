@@ -6,6 +6,7 @@ import 'package:rent/ui/widget/item.dart';
 import 'package:rent/ui/widget/navigator.dart';
 import 'package:rent/ui/widget/notifButton.dart';
 import '../widget/Search.dart';
+import '../widget/buttonNavBar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,6 +17,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final TextEditingController _textEditingController = TextEditingController();
+String currentButtonText = 'all';
+
   @override
   Widget build(BuildContext context) {
     final double tinggi = MediaQuery.of(context).size.height;
@@ -49,54 +52,22 @@ class _HomePageState extends State<HomePage> {
                   decoration: BoxDecoration(
                       color: Colors.black12,
                       borderRadius: BorderRadius.circular(10)),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      NavBar(
-                        buttonText: "all",
-                      ),
-                      NavBar(
-                        buttonText: "sepatu",
-                      ),
-                      NavBar(
-                        buttonText: "tenda",
-                      ),
-                      NavBar(
-                        buttonText: "tenda",
-                      )
-                    ],
-                  ),
+                  child: BunttonNavBar(
+                   onButtonPressed: (buttonText) {
+                     setState(() {
+                       currentButtonText = buttonText;
+                     });
+                   },
+                 ),
                 ),
+                 
               ),
               Container(
                 height: tinggi * 0.45,
                 width: lebar,
                 color: Colors.amber,
-                child: Item(),
+                child: Item(currentButtonText: currentButtonText,),
               ),
-          
-              // Row(
-              //   mainAxisAlignment: MainAxisAlignment.spaceAround,
-              //   children: [
-              //     IconButton(
-              //       onPressed: () {},
-              //       icon: Icon(
-              //         Icons.home_outlined,
-              //         size: 40,
-              //       ),
-              //     ),
-              //     IconButton(
-              //       onPressed: () {
-              //         Navigator.pushNamed(context, '/Cart');
-              //       },
-              //       icon: Icon(Icons.shopping_cart_outlined, size: 40),
-              //     ),
-              //     IconButton(
-              //       onPressed: () {},
-              //       icon: Icon(Icons.person_outline_outlined, size: 40),
-              //     ),
-              //   ],
-              // )
             ],
           ),
         ),

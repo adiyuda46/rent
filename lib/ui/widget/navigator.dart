@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class NavBar extends StatefulWidget {
   final String buttonText;
 
-  const NavBar({Key? key, required this.buttonText}) : super(key: key);
+  const NavBar({Key? key, required this.buttonText, required bool isSelected, required Function() onPressed}) : super(key: key);
 
   @override
   _NavBarState createState() => _NavBarState();
