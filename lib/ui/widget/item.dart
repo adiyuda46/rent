@@ -32,7 +32,7 @@ class Item extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.all(10.0),
           child: GestureDetector(
-            onTap: () => Navigator.pushNamed(context, '/DetailProduct'),
+            onTap: () => Navigator.pushReplacementNamed(context, '/DetailProduct'),
             child: Stack(
               children: [
                 Container(

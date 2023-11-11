@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         '/ForgetPass':(context) => ForgetPass(),
         '/CreateNewPass':(context) => CreateNewPass(),
         '/PasswordChange':(context) => PasswordChange(),
-        '/profilePage':(context) => profilePage(),
+        '/ProfilePage':(context) => ProfilePageV2(),
         '/MyBottomNavigationBar' : (context) => MyBottomNavigationBar()
       },
     );
