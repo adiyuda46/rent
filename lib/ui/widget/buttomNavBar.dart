@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rent/ui/page/cart.dart';
+import 'package:rent/ui/page/payment.dart';
 import 'package:rent/ui/page/profile.dart';
 
 import '../page/home.dart';
@@ -15,7 +16,8 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
   final List<Widget> _pages = [
     HomePage(),
     Cart(),
-    ProfilePageV2()
+    ProfilePageV2(),
+    // PaymentPage()
   ];
 
   void _onTabTapped(int index) {
