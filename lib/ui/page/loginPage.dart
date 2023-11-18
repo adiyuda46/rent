@@ -64,7 +64,7 @@ class LoginPage extends StatelessWidget {
                   Text("Don't have an account yet? "),
                   InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, 'RegisterPage');
+                  Navigator.pushNamed(context, '/LoginPage');
                 },
                 child: Text(
                   "Register Now!",

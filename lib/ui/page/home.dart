@@ -63,7 +63,7 @@ String currentButtonText = 'all';
                  
               ),
               Container(
-                height: tinggi * 0.45,
+                height: tinggi * 0.49,
                 width: lebar,
                 color: Colors.amber,
                 child: Item(currentButtonText: currentButtonText,),
