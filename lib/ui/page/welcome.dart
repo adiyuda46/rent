@@ -59,7 +59,7 @@ class WelcomePage extends StatelessWidget {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, '/RegisterPage');
+                        Navigator.pushReplacementNamed(context, '/RegisterPage');
                       },
                       child: Text(
                         "REGISTER",
