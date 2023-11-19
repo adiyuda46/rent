@@ -29,17 +29,22 @@ class _DetailItemState extends State<DetailItem> {
     String information = equipment['information'];
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(equipment["title"]),
+      appBar:AppBar(
+        title: Text(
+          equipment["title"],
+          style: TextStyle(color: Colors.black, fontSize: 30),
+        ),
         iconTheme: IconThemeData(color: Colors.black),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
       ),
       body: Container(
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.only(top: 100, right: 20, left: 20),
+        padding: EdgeInsets.only(top: 20, right: 20, left: 20),
         child: Column(
           children: [
             Container(
-              height: 200,
+              height: 300,
               decoration: BoxDecoration(
                 color: Colors.black12,
                 borderRadius: BorderRadius.circular(20),
