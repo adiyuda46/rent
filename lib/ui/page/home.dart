@@ -39,42 +39,21 @@ String currentButtonText = 'all';
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    BannerPage(),
-                    BannerPage(),
-                    BannerPage(),
+                    BannerPage(imagePath: 'assets/Gratis ongkir card.png'),
+                   BannerPage(imagePath: 'assets/Gratis ongkir card.png'),
+                    BannerPage(imagePath: 'assets/Gratis ongkir card.png'),
                   ],
                 ),
               ),
-              Container(
-                height: tinggi * 0.59,
-                width: lebar,
-                color: Colors.amber,
-                child: CategoryHome(),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: tinggi * 0.56,
+                  width: lebar,
+                  //color: Colors.amber,
+                  child: CategoryHome(),
+                ),
               )
-              // Padding(
-              //   padding: const EdgeInsets.fromLTRB(22, 24, 22, 20),
-              //   child: Container(
-              //     height: tinggi * 0.05,
-              //     width: lebar,
-              //     decoration: BoxDecoration(
-              //         color: Colors.black12,
-              //         borderRadius: BorderRadius.circular(10)),
-              //     child: BunttonNavBar(
-              //      onButtonPressed: (buttonText) {
-              //        setState(() {
-              //          currentButtonText = buttonText;
-              //        });
-              //      },
-              //    ),
-              //   ),
-                 
-              // ),
-              // Container(
-              //   height: tinggi * 0.49,
-              //   width: lebar,
-              //   color: Colors.amber,
-              //   child: Item(currentButtonText: currentButtonText,),
-              // ),
             ],
           ),
         ),

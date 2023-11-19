@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BannerPage extends StatelessWidget {
-  const BannerPage({super.key});
+  final String imagePath;
+  const BannerPage({super.key , required this.imagePath});
 
   @override
   Widget build(BuildContext context) {
@@ -14,36 +15,17 @@ class BannerPage extends StatelessWidget {
         width: lebar * 0.8,
         // color: Colors.black12,
         child: Card(
-         // elevation: 4,
+          // elevation: 4,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
           ),
           color: Colors.black12,
+          child: Image(
+            image: AssetImage(imagePath),
+            fit: BoxFit.fill,
+          ),
         ),
       ),
     );
   }
 }
-// child: const SizedBox(
-//         height: 150, // Tinggi Card
-//         width: l , // Lebar Card
-//         child: Column(
-//           mainAxisAlignment: MainAxisAlignment.center,
-//           children: [
-//             Text(
-//               'Judul Card',
-//               style: TextStyle(
-//                 fontSize: 18,
-//                 fontWeight: FontWeight.bold,
-//               ),
-//             ),
-//             SizedBox(height: 8),
-//             Text(
-//               'Deskripsi card ini.',
-//               style: TextStyle(
-//                 fontSize: 16,
-//               ),
-//             ),
-//           ],
-//         ),
-//       ),
