@@ -27,6 +27,7 @@ class _ListItemState extends State<ListItem> {
           argsRecipe["title"],
           style: TextStyle(color: Colors.black, fontSize: 30),
         ),
+        iconTheme: IconThemeData(color: Colors.black),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),

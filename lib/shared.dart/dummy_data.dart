@@ -12,8 +12,8 @@ List<Category> dummyCategories = [
       images:
           "https://sibayakadventure.com/wp-content/uploads/2020/07/IMG_20200719_091941.jpg"),
   Category(
-    id: "id_bag",
-    title: "Bag",
+    id: "id_carrier",
+    title: "Carrier",
     images:
         "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//93/MTA-10249841/consina_flash_sale----_carrier_consina_alpine_55_liter_-_tas_gunung_consina_alpine_original__full04_o6jz0kuy.jpg",
   ),
@@ -43,12 +43,14 @@ List<Category> dummyCategories = [
 ];
 
 List<Equipment> dummyEquipment = [
+  // data tenda
   Equipment(
     id: DateTime.now().toString(),
     title: "Tenda Eiger",
     category: "id_tent",
     price: 15000,
-    information:"tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
+    information:
+        "tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
     day: ["1 day", "2 Day", "3 Day", "4 Day"],
     duration: 10,
     imageUrl:
@@ -59,8 +61,9 @@ List<Equipment> dummyEquipment = [
     title: "Tenda Consina",
     category: "id_tent",
     price: 15000,
-    information: "tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
-   day: ["1 day", "2 Day", "3 Day", "4 Day"],
+    information:
+        "tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
+    day: ["1 day", "2 Day", "3 Day", "4 Day"],
     duration: 20,
     imageUrl:
         "https://shop.consina-adventure.com/image/cache/data/product/TENT/magnum%204/2021/magnum-4-Juli2021-OR-1-800x800.jpg",
@@ -70,141 +73,159 @@ List<Equipment> dummyEquipment = [
     title: "Tenda Arei",
     category: "id_tent",
     price: 10000,
-    information:"tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
+    information:
+        "tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
     day: ["1 day", "2 Day", "3 Day", "4 Day"],
     duration: 25,
     imageUrl:
         "https://lzd-img-global.slatic.net/g/p/8beea42d602f912fb25ac12fc9eb6436.jpg_720x720q80.jpg",
   ),
+  // data tas
   Equipment(
     id: DateTime.now().toString(),
-    title: "Bebek Bakar",
-    category: "id_bebek",
+    title: "Carrier Eiger",
+    category: "id_carrier",
     price: 15000,
     information:
-        "tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
-    day: [
-      "Kecap",
-      "Bawang Merah",
-      "Garam",
-    ],
+        "produk Eiger menggunakan bahan cordura, polyester, dan nylon yang ringan tetapi kuat.",
+    day: ["1 day", "2 Day", "3 Day", "4 Day"],
     duration: 25,
-    imageUrl: "https://resepkoki.co/wp-content/uploads/2015/04/bebekbakar.jpg",
+    imageUrl:
+        "https://down-id.img.susercontent.com/file/3a297b70913b0569c3485eba2197c1f2",
   ),
   Equipment(
     id: DateTime.now().toString(),
-    title: "Bebek Goreng",
-    category: "id_bebek",
+    title: "Carrier Consina",
+    category: "id_carrier",
     price: 15000,
     information:
-        "tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
-    day: [
-      "Gula",
-      "Salam",
-      "Serai",
-      "Bawang Putih",
-    ],
+        "produk Eiger menggunakan bahan cordura, polyester, dan nylon yang ringan tetapi kuat.",
+    day: ["1 day", "2 Day", "3 Day", "4 Day"],
     duration: 15,
-    imageUrl: "https://resepkoki.co/wp-content/uploads/2015/04/bebekbakar.jpg",
+    imageUrl:
+        "https://www.consina.com/wp-content/uploads/2022/07/overland-track-dbl-1600x1600.jpg",
   ),
   Equipment(
     id: DateTime.now().toString(),
-    title: "Burger",
-    category: "id_fastequipment",
+    title: "Carrier Arei",
+    category: "id_carrier",
     price: 15000,
     information:
-        "tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
-    day: [
-      "Roti",
-      "Daging",
-      "Salada",
-      "Mayones",
-    ],
+        "produk Eiger menggunakan bahan cordura, polyester, dan nylon yang ringan tetapi kuat.",
+    day: ["1 day", "2 Day", "3 Day", "4 Day"],
+    duration: 25,
+    imageUrl:
+        "https://down-id.img.susercontent.com/file/id-11134207-7qul2-li4e3mmlx4h928_tn",
+  ),
+  // sepatu
+  Equipment(
+    id: DateTime.now().toString(),
+    title: "Shoe Eiger",
+    category: "id_shoe",
+    price: 15000,
+    information:
+        "Sepatu akan memberikan perlindungan untuk kaki kita selama beraktivitas di luar ruangan atau alam terbuka",
+    day: ["1 day", "2 Day", "3 Day", "4 Day"],
     duration: 10,
     imageUrl:
-        "https://storage.googleapis.com/cdn-1.pintaria.com/wp/roti-burger-Pintaria-200806023904.jpg",
+        "https://ds393qgzrxwzn.cloudfront.net/resize/c500x500/cat1/img/images/0/sOsow8ncTn.jpg",
   ),
   Equipment(
     id: DateTime.now().toString(),
-    title: "Pizza",
-    category: "id_fastequipment",
+    title: "Shoe Consina",
+    category: "id_shoe",
     price: 15000,
     information:
-        "tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
-    day: [
-      "Roti",
-      "Sosis",
-      "Bawang Putih",
-      "Saus",
-    ],
-    duration: 5,
-    imageUrl:
-        "https://www.simplyrecipes.com/thmb/qu-AslBeskzh_HG9H0dQAmcrdLQ=/648x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg",
-  ),
-  Equipment(
-    id: DateTime.now().toString(),
-    title: "Cumi Saus Tiram",
-    category: "id_seaequipment",
-    price: 15000,
-    information:
-        "tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
-    day: [
-      "Cumi",
-      "Cabai Merah",
-      "Bawang Putih",
-    ],
+        "Sepatu akan memberikan perlindungan untuk kaki kita selama beraktivitas di luar ruangan atau alam terbuka",
+    day: ["1 day", "2 Day", "3 Day", "4 Day"],
     duration: 10,
     imageUrl:
-        "https://img.okezone.com/content/2021/01/29/298/2353163/resep-cumi-saus-tiram-sajian-seaequipment-yang-dijamin-bikin-ketagihan-KtneudN5H3.jpg",
+        "https://down-id.img.susercontent.com/file/3d6acdb6206558c99fb7366b7721ff54",
   ),
   Equipment(
     id: DateTime.now().toString(),
-    title: "Udang Saus Tiram",
-    category: "id_seaequipment",
+    title: "Shoe Arei",
+    category: "id_shoe",
     price: 15000,
     information:
-        "tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
-    day: [
-      "Udang",
-      "Cabai Merah",
-      "Bawang Putih",
-    ],
-    duration: 15,
+        "Sepatu akan memberikan perlindungan untuk kaki kita selama beraktivitas di luar ruangan atau alam terbuka",
+    day: ["1 day", "2 Day", "3 Day", "4 Day"],
+    duration: 10,
     imageUrl:
-        "https://cdns.klimg.com/merdeka.com/i/w/news/2021/06/19/1320300/content_images/670x335/20210619131518-1-ilustrasi-udang-004-destriyana.jpg",
+        "https://img.ws.mms.shopee.co.id/56362e6aa77ccbda9503283f62fb6156",
+  ),
+  // jaket
+  Equipment(
+    id: DateTime.now().toString(),
+    title: "Jacket Eiger",
+    category: "id_jacket",
+    price: 15000,
+    information:
+        "bahan yang digunakan dalam pembuatan jaket EIGER windproof atau antiangin adalah polyester. Keunggulan dari bahan ini adalah tahan lama, tidak mudah berkerut, dan hangat.",
+    day: ["1 day", "2 Day", "3 Day", "4 Day"],
+    duration: 10,
+    imageUrl:
+        "https://images.tokopedia.net/img/cache/700/VqbcmM/2021/1/21/3e64fd08-e234-4a26-8354-61c9272a0381.jpg",
   ),
   Equipment(
     id: DateTime.now().toString(),
-    title: "Mie Goreng",
-    category: "id_noodle",
+    title: "Jacket Consina",
+    category: "id_jacket",
     price: 15000,
     information:
-        "tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
-    day: [
-      "Mie",
-      "Bawang Goreng",
-      "Tomat",
-      "Garam",
-    ],
-    duration: 15,
+        "bahan yang digunakan dalam pembuatan jaket EIGER windproof atau antiangin adalah polyester. Keunggulan dari bahan ini adalah tahan lama, tidak mudah berkerut, dan hangat.",
+    day: ["1 day", "2 Day", "3 Day", "4 Day"],
+    duration: 10,
     imageUrl:
-        "https://www.fimela.com/equipment/read/4255116/resep-mie-goreng-spesial-bakso-sosis-telur",
+        "https://down-id.img.susercontent.com/file/c4a4dc4550a0608c5a2bdf862448373a",
   ),
   Equipment(
     id: DateTime.now().toString(),
-    title: "Mie Rebus",
-    category: "id_noodle",
+    title: "Jacket Arei",
+    category: "id_jacket",
     price: 15000,
     information:
-        "tenda Dome memiliki ciri khas pada bentuk melengkung di masing-masing tiang penyangga, dengan dua atau tiga kutub tiang yang membujur setengah lingkaran untuk menyangga tiang.",
-    day: [
-      "Mie",
-      "Jeruk Nipis",
-      "Tomat",
-      "Telur",
-    ],
-    duration: 15,
+        "bahan yang digunakan dalam pembuatan jaket EIGER windproof atau antiangin adalah polyester. Keunggulan dari bahan ini adalah tahan lama, tidak mudah berkerut, dan hangat.",
+    day: ["1 day", "2 Day", "3 Day", "4 Day"],
+    duration: 10,
     imageUrl:
-        "https://www.omahresep.com/wp-content/uploads/2021/02/mie-rebus-warkop.jpg",
+        "https://images.tokopedia.net/img/cache/700/VqbcmM/2021/12/22/2304784b-0a8f-4cb8-adc9-9f318851a4ee.jpg",
+  ),
+  // sb
+  Equipment(
+    id: DateTime.now().toString(),
+    title: "Sleeping Bag Eiger",
+    category: "id_sleeping_bag",
+    price: 15000,
+    information:
+        "bahan yang digunakan dalam pembuatan jaket EIGER windproof atau antiangin adalah polyester. Keunggulan dari bahan ini adalah tahan lama, tidak mudah berkerut, dan hangat.",
+    day: ["1 day", "2 Day", "3 Day", "4 Day"],
+    duration: 10,
+    imageUrl:
+        "https://id-test-11.slatic.net/p/38f75ec90badb4c9798302f317843a88.jpg",
+  ),
+  Equipment(
+    id: DateTime.now().toString(),
+    title: "Sleeping Bag Consina",
+    category: "id_sleeping_bag",
+    price: 15000,
+    information:
+        "bahan yang digunakan dalam pembuatan jaket EIGER windproof atau antiangin adalah polyester. Keunggulan dari bahan ini adalah tahan lama, tidak mudah berkerut, dan hangat.",
+    day: ["1 day", "2 Day", "3 Day", "4 Day"],
+    duration: 10,
+    imageUrl:
+        "https://lzd-img-global.slatic.net/g/p/242ff6e5ba835a8ce0f69c578063d6e9.jpg_720x720q80.jpg",
+  ),
+  Equipment(
+    id: DateTime.now().toString(),
+    title: "Sleeping Bag Arei",
+    category: "id_sleeping_bag",
+    price: 15000,
+    information:
+        "bahan yang digunakan dalam pembuatan jaket EIGER windproof atau antiangin adalah polyester. Keunggulan dari bahan ini adalah tahan lama, tidak mudah berkerut, dan hangat.",
+    day: ["1 day", "2 Day", "3 Day", "4 Day"],
+    duration: 10,
+    imageUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX72sDVobizzmBsOfNPQZBvPoGryOS9L6__7Rb2S05NktQut3zc_pVxGctQ2slT_FAJfU&usqp=CAU",
   ),
 ];
