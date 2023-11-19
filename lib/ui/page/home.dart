@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rent/ui/widget/appBar.dart';
 import 'package:rent/ui/widget/buttomNavBar.dart';
 import 'package:rent/ui/widget/card.dart';
+import 'package:rent/ui/widget/categoryHome.dart';
 import 'package:rent/ui/widget/item.dart';
 import 'package:rent/ui/widget/navigator.dart';
 import 'package:rent/ui/widget/notifButton.dart';
@@ -38,36 +39,21 @@ String currentButtonText = 'all';
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    BannerPage(),
-                    BannerPage(),
-                    BannerPage(),
+                    BannerPage(imagePath: 'assets/Gratis ongkir card.png'),
+                   BannerPage(imagePath: 'assets/Gratis ongkir card.png'),
+                    BannerPage(imagePath: 'assets/Gratis ongkir card.png'),
                   ],
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(22, 24, 22, 20),
+                padding: const EdgeInsets.all(8.0),
                 child: Container(
-                  height: tinggi * 0.05,
+                  height: tinggi * 0.56,
                   width: lebar,
-                  decoration: BoxDecoration(
-                      color: Colors.black12,
-                      borderRadius: BorderRadius.circular(10)),
-                  child: BunttonNavBar(
-                   onButtonPressed: (buttonText) {
-                     setState(() {
-                       currentButtonText = buttonText;
-                     });
-                   },
-                 ),
+                  //color: Colors.amber,
+                  child: CategoryHome(),
                 ),
-                 
-              ),
-              Container(
-                height: tinggi * 0.45,
-                width: lebar,
-                color: Colors.amber,
-                child: Item(currentButtonText: currentButtonText,),
-              ),
+              )
             ],
           ),
         ),

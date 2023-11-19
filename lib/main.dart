@@ -12,6 +12,8 @@ import 'package:rent/ui/page/registerPage.dart';
 import 'package:rent/ui/page/splash.dart';
 import 'package:rent/ui/page/welcome.dart';
 import 'package:rent/ui/widget/buttomNavBar.dart';
+import 'package:rent/ui/widget/detailItem.dart';
+import 'package:rent/ui/widget/listItem.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,7 +41,9 @@ class MyApp extends StatelessWidget {
         '/MyBottomNavigationBar' : (context) => MyBottomNavigationBar(),
         '/PaymentPage' : (context) => PaymentPage(),
 
-        
+        // router baru
+        '/ListItem': (context) => ListItem(),
+        '/DetailItem': (context) => DetailItem()
       },
     );
   }
