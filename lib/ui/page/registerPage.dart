@@ -70,7 +70,7 @@ class RegisterPage extends StatelessWidget {
                     Text("Alredy have an account? "),
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, '/LoginPage');
+                        Navigator.pushReplacementNamed(context, '/LoginPage');
                       },
                       child: Text(
                         "Login Now!",
