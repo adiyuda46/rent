@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rent/ui/widget/appBar.dart';
 import 'package:rent/ui/widget/buttomNavBar.dart';
 import 'package:rent/ui/widget/card.dart';
+import 'package:rent/ui/widget/categoryHome.dart';
 import 'package:rent/ui/widget/item.dart';
 import 'package:rent/ui/widget/navigator.dart';
 import 'package:rent/ui/widget/notifButton.dart';
@@ -44,30 +45,36 @@ String currentButtonText = 'all';
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(22, 24, 22, 20),
-                child: Container(
-                  height: tinggi * 0.05,
-                  width: lebar,
-                  decoration: BoxDecoration(
-                      color: Colors.black12,
-                      borderRadius: BorderRadius.circular(10)),
-                  child: BunttonNavBar(
-                   onButtonPressed: (buttonText) {
-                     setState(() {
-                       currentButtonText = buttonText;
-                     });
-                   },
-                 ),
-                ),
-                 
-              ),
               Container(
-                height: tinggi * 0.49,
+                height: tinggi * 0.59,
                 width: lebar,
                 color: Colors.amber,
-                child: Item(currentButtonText: currentButtonText,),
-              ),
+                child: CategoryHome(),
+              )
+              // Padding(
+              //   padding: const EdgeInsets.fromLTRB(22, 24, 22, 20),
+              //   child: Container(
+              //     height: tinggi * 0.05,
+              //     width: lebar,
+              //     decoration: BoxDecoration(
+              //         color: Colors.black12,
+              //         borderRadius: BorderRadius.circular(10)),
+              //     child: BunttonNavBar(
+              //      onButtonPressed: (buttonText) {
+              //        setState(() {
+              //          currentButtonText = buttonText;
+              //        });
+              //      },
+              //    ),
+              //   ),
+                 
+              // ),
+              // Container(
+              //   height: tinggi * 0.49,
+              //   width: lebar,
+              //   color: Colors.amber,
+              //   child: Item(currentButtonText: currentButtonText,),
+              // ),
             ],
           ),
         ),

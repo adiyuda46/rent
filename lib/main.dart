@@ -11,6 +11,8 @@ import 'package:rent/ui/page/registerPage.dart';
 import 'package:rent/ui/page/splash.dart';
 import 'package:rent/ui/page/welcome.dart';
 import 'package:rent/ui/widget/buttomNavBar.dart';
+import 'package:rent/ui/widget/detailItem.dart';
+import 'package:rent/ui/widget/listItem.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +37,10 @@ class MyApp extends StatelessWidget {
         '/CreateNewPass':(context) => CreateNewPass(),
         '/PasswordChange':(context) => PasswordChange(),
         '/ProfilePage':(context) => ProfilePageV2(),
-        '/MyBottomNavigationBar' : (context) => MyBottomNavigationBar()
+        '/MyBottomNavigationBar' : (context) => MyBottomNavigationBar(),
+        // router baru
+        '/ListItem': (context) => ListItem(),
+        '/DetailItem': (context) => DetailItem()
       },
     );
   }
