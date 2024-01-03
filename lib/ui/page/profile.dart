@@ -5,11 +5,15 @@ import 'package:rent/ui/widget/enter.dart';
 class ProfilePageV2 extends StatelessWidget {
   const ProfilePageV2({super.key});
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('asd'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+        title: Text('Profil',style: TextStyle(color: Colors.black),),
       ),
       body: Padding(
         padding: const EdgeInsets.all(22.0),
@@ -27,7 +31,7 @@ class ProfilePageV2 extends StatelessWidget {
               )
             ),
            ),
-           Enter(enter: 30),
+           const Enter(enter: 30),
            Text('Account Details', style: textFont20),
            Enter(enter: 9),
            Text('Nama Kamu', style: textFont14),

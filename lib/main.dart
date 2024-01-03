@@ -1,4 +1,6 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:rent/firebase_options.dart';
 import 'package:rent/ui/page/ForgetPassword.dart';
 import 'package:rent/ui/page/createNewPass.dart';
 import 'package:rent/ui/page/cart.dart';
@@ -15,7 +17,11 @@ import 'package:rent/ui/widget/buttomNavBar.dart';
 import 'package:rent/ui/widget/detailItem.dart';
 import 'package:rent/ui/widget/listItem.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+);
   runApp(const MyApp());
 }
 

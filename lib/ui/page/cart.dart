@@ -331,8 +331,10 @@ class Cart extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         centerTitle: true,
-        title: Text('My Cart'),
+        title: Text('My Cart',style: TextStyle(color: Colors.black),),
       ),
       body: SafeArea(
         child: ListView(

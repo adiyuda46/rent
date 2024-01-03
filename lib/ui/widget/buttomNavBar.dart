@@ -36,16 +36,16 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
         onTap: _onTabTapped,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home_outlined),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart),
+            icon: Icon(Icons.shopping_cart_outlined),
             label: 'Cart',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile555',
+            icon: Icon(Icons.person_outline),
+            label: 'Profile',
           ),
         ],
       ),
