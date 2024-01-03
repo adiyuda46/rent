@@ -14,10 +14,10 @@ class WelcomePage extends StatelessWidget {
           Container(
             height: tinggi,
             width: lebar,
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage('assets/Welcome.png'),
-                    fit: BoxFit.cover)),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/Welcome.png'), fit: BoxFit.cover),
+            ),
           ),
           Center(
             child: Align(
@@ -35,7 +35,7 @@ class WelcomePage extends StatelessWidget {
                           fontSize: 18,
                           fontWeight: semibold),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     ElevatedButton(
@@ -59,7 +59,8 @@ class WelcomePage extends StatelessWidget {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        Navigator.pushReplacementNamed(context, '/RegisterPage');
+                        Navigator.pushReplacementNamed(
+                            context, '/RegisterPage');
                       },
                       child: Text(
                         "REGISTER",

@@ -15,12 +15,13 @@ List<Category> dummyCategories = [
     id: "id_carrier",
     title: "Carrier",
     images:
-        "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//93/MTA-10249841/consina_flash_sale----_carrier_consina_alpine_55_liter_-_tas_gunung_consina_alpine_original__full04_o6jz0kuy.jpg",
+    "https://www.bhinneka.com/blog/wp-content/uploads/2022/09/Rekomendasi-Tas-Gunung-Terbaik-Eiger-Eliptic-Solaris-500x500.jpg"
+        //"https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//93/MTA-10249841/consina_flash_sale----_carrier_consina_alpine_55_liter_-_tas_gunung_consina_alpine_original__full04_o6jz0kuy.jpg",
   ),
   Category(
     id: "id_shoe",
     title: "Shoe",
-    images: "https://s2.bukalapak.com/img/75897385003/s-330-330/data.jpeg.webp",
+    images: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNYijhdXFejHu7dcwSoJjAB__ENsaHnVNPlQ&usqp=CAU",
   ),
   Category(
     id: "id_jacket",

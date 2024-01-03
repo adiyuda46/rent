@@ -7,7 +7,7 @@ class ForgetPass extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("testing")
+      appBar: AppBar(title: Text("Forget Password")
       ,),
     body: Padding(
         padding: const EdgeInsets.all(22.0),

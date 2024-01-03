@@ -13,18 +13,18 @@ class _ListItemState extends State<ListItem> {
 
   @override
   Widget build(BuildContext context) {
-    Map<String, dynamic> argsRecipe =
+    Map<String, dynamic> argsEquipment =
         ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
 
     List<Equipment> filterEquipment = dummyEquipment.where((equipment) {
-      return equipment.category.contains(argsRecipe['id']);
+      return equipment.category.contains(argsEquipment['id']);
     }).toList();
 
     return Scaffold(
       backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
         title: Text(
-          argsRecipe["title"],
+          argsEquipment["title"],
           style: TextStyle(color: Colors.black, fontSize: 30),
         ),
         iconTheme: IconThemeData(color: Colors.black),
